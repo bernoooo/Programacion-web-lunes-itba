@@ -63,7 +63,7 @@ header nav ul li a:hover {
 
 
 .imageninicio {
-    background-image: url(../Programacion-web-lunes-itba/Imges/ImagenFondoLDA.jpg);
+    background-image: url(./Imges/ImagenFondoLDA.jpg);
     width: 100%;
     height: 90vh;
     background-position: center;

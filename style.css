@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Home Page */
+header {
+    position: sticky;
+    top: 0;
+    padding: 2vh 2vh;
+    background-color: #D20823;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+    z-index: 1000;
+}
+
+header h1 {
+    color: white;
+    font-size: 5vh;
+    font-style: italic;
+    font: weight 400;
+    font-family: 'Arial', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+        sans-serif;
+    margin-left: 2vh;
+}
+
+header h1 img {
+    width: 8vh;
+    height: 8vh;
+}
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 2vh;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    margin: 1.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 250px;
+    color: black;
+    display: inline-block;
+    padding: 1vh 2vh;
+    background-color: white;
+    border-radius: 1vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+.imageninicio {
+    background-image: url(../Programacion-web-lunes-itba/Imges/ImagenFondoLDA.jpg);
+    width: 100%;
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageninicio h2 {
+    font-size: 5vh;
+    
+}
+
+.imageninicio div button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 2vh 4vh; /* Cambiado a valores ligeramente más grandes */
+    text-decoration: none;
+    font-size: 2.5vh; /* Ajustado ligeramente más grande */
+    margin-top: 1.5vh; /* Ajustado ligeramente más grande */
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 2vh;
+}
+
+.imageninicio div button:hover {
+    background-color: white;
+    color: black;
+}
+
+.imageninicio div {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.4vh;
+}
+
+.historia {
+    padding: 5vh;
+    background-color: red;
+    color: white;
+}
+
+.historia h2 {
+    align-items: center;
+    margin-bottom: 3vh;
+}
+
+.ContenidoHistoria {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 2vh;
+}
+
+.ContenidoHistoria div {
+    height: 40vh;
+    width: 60vh;
+}
+.ContenidoHistoria img {
+    height: 40vh;
+    width: 40vh;
+}
+#carouselExample {
+    margin-left: 25vh ;
+}
+
+.ContenidoHistoria p {
+    width: 50%;
+}
+
+.Idolos {
+    text-align: center;
+}
+
+.Idolos h2 {
+    font-size: 3vh; /* Ajustado ligeramente más grande */
+    margin-bottom: 2.5vh; /* Ajustado ligeramente más grande */
+    margin-top: 2.5vh; /* Ajustado ligeramente más grande */
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 2vh;
+    margin-bottom: 2vh;
+}
+
+.card {
+    width: 18rem;
+}
+
+.card img {
+    height: 42vh; /* Ajustado ligeramente más grande */
+    object-fit: cover;
+}
+
+.card-body {
+    background-color: #f8f9fa;
+}
+
+.btn-rojo {
+    background-color: red;
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-rojo:hover {
+    background-color: darkred;
+}
+
+.Asociarse {
+    padding: 5vh;
+    background-color: #f8f9fa;
+    color: #000;
+    text-align: center;
+}
+
+.Asociarse h2 {
+    font-size: 3vh; /* Ajustado ligeramente más grande */
+    margin-bottom: 3vh; /* Ajustado ligeramente más grande */
+}
+
+.Asociarse h3 {
+    font-size: 2vh; /* Ajustado ligeramente más grande */
+    margin-bottom: 2.5vh; /* Ajustado ligeramente más grande */
+}
+
+.form-group {
+    margin: 0 auto 3vh; /* Ajustado ligeramente más grande */
+    max-width: 45vh; /* Ajustado ligeramente más grande */
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5vh;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 0.8vh;
+    border: 0.1vh solid #ccc;
+    border-radius: 0.5vh;
+    font-size: 1.4vh;
+}
+
+button[type="submit"] {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 1.5vh 3vh; /* Ajustado ligeramente más grande */
+    border-radius: 1.5vh; /* Ajustado ligeramente más grande */
+    font-size: 2.3vh; /* Ajustado ligeramente más grande */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+    /* Ajuste del tamaño del título en la vista móvil */
+    header h1 {
+        font-size: 3vh;
+    }
+
+
+    /* Alineación del botón del navbar a la derecha */
+    .navbar-toggler-right {
+        margin-left: auto;
+        margin-right: 2vh;
+        color: white; /* Color del icono del menú desplegable */
+    }
+
+    /* Eliminar el margen superior del menú desplegable */
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white; /* Ajusta el color de fondo según sea necesario */
+        z-index: 1000; /* Asegura que el navbar desplegado esté encima de otros elementos */
+        display: none; /* Inicialmente oculta las opciones */
+    }
+    
+    .navbar-collapse.show {
+        display: block; /* Muestra las opciones cuando el navbar está desplegado */
+    }
+    
+    /* Estilo de las opciones */
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar-nav li {
+        margin: 1rem 0;
+    }
+    
+    /* Ajuste del tamaño del título en la vista móvil */
+    header h1 {
+        font-size: 3vh;
+        margin-top: 1.5vh; /* Agrega un espacio arriba del h1 */
+    }
+
+    /* Alineación de los elementos del navbar a la derecha */
+    .navbar-nav {
+        margin-left: auto;
+        margin-right: 2vh;
+    }
+
+    /* Espaciado entre elementos del menú */
+    .navbar-nav li {
+        margin-left: 1rem;
+    }
+
+    /* Alineación del título a la izquierda */
+    .navbar-brand {
+        margin-right: auto;
+        margin-left: 2vh;
+    }
+
+    /* Ajuste de margen para el contenido de historia */
+    .historia .ContenidoHistoria {
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ContenidoHistoria p {
+        width: 100%;
+    }
+    /* Ajuste de margen para el carrusel */
+    #carouselExample {
+        margin-left: 0;
+        margin-right: 0;
+        height: auto;
+    }
+}

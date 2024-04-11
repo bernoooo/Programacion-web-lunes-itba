@@ -242,16 +242,18 @@ button[type="submit"] {
     .navbar-toggler-right {
         margin-left: auto;
         margin-right: 2vh;
-        color: white; /* Color del icono del menú desplegable */
+        color: #D20823; /* Color del icono del menú desplegable */
     }
-
+    nav {
+        color: #D20823;
+    }
     /* Eliminar el margen superior del menú desplegable */
     .navbar-collapse {
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: white; /* Ajusta el color de fondo según sea necesario */
+        background-color: #D20823; /* Ajusta el color de fondo según sea necesario */
         z-index: 1000; /* Asegura que el navbar desplegado esté encima de otros elementos */
         display: none; /* Inicialmente oculta las opciones */
     }

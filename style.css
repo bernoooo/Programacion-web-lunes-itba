@@ -237,6 +237,9 @@ button[type="submit"] {
         font-size: 3vh;
     }
 
+    header {
+        position: sticky;
+    }
 
     /* Alineación del botón del navbar a la derecha */
     .navbar-toggler-right {
@@ -306,6 +309,10 @@ button[type="submit"] {
 
     .ContenidoHistoria p {
         width: 100%;
+    }
+
+    .card-container {
+        margin: 2vh;
     }
     /* Ajuste de margen para el carrusel */
     #carouselExample {

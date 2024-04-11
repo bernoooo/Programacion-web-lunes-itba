@@ -58,7 +58,12 @@ header nav ul li a {
 
 header nav ul li a:hover {
     background-color: black;
-    color: white;
+    color: #D20823;
+}
+
+#hamburger {
+    background-color: #D20823!important;
+    
 }
 
 
@@ -154,10 +159,12 @@ header nav ul li a:hover {
     justify-content: center;
     gap: 2vh;
     margin-bottom: 2vh;
+
 }
 
 .card {
-    width: 18rem;
+    width: 35vh;
+    margin: 3vh;
 }
 
 .card img {
@@ -234,7 +241,7 @@ button[type="submit"] {
 @media screen and (max-width: 768px) {
     /* Ajuste del tamaño del título en la vista móvil */
     header h1 {
-        font-size: 3vh;
+        font-size: 2,5vh;
     }
 
     header {
@@ -244,7 +251,7 @@ button[type="submit"] {
     /* Alineación del botón del navbar a la derecha */
     .navbar-toggler-right {
         margin-left: auto;
-        margin-right: 2vh;
+        margin-right: 0.5vh;
         color: #D20823; /* Color del icono del menú desplegable */
     }
     nav {
@@ -281,7 +288,6 @@ button[type="submit"] {
         font-size: 3vh;
         margin-top: 1.5vh; /* Agrega un espacio arriba del h1 */
     }
-
     /* Alineación de los elementos del navbar a la derecha */
     .navbar-nav {
         margin-left: auto;
@@ -313,6 +319,11 @@ button[type="submit"] {
 
     .card-container {
         margin: 2vh;
+    }
+
+    .card {
+        width: 30vh;
+        margin: 0;
     }
     /* Ajuste de margen para el carrusel */
     #carouselExample {

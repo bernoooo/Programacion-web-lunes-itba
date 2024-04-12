@@ -19,7 +19,7 @@ header {
 
 header h1 {
     color: white;
-    font-size: 5vh;
+    font-size: 8vh;
     font-style: italic;
     font: weight 400;
     font-family: 'Arial', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
@@ -30,6 +30,7 @@ header h1 {
 header h1 img {
     width: 8vh;
     height: 8vh;
+    margin-right: 2vh;
 }
 
 
@@ -86,10 +87,10 @@ header nav ul li a:hover {
     background-color: red;
     border: none;
     color: white;
-    padding: 2vh 4vh; /* Cambiado a valores ligeramente más grandes */
+    padding: 2vh 4vh; 
     text-decoration: none;
-    font-size: 2.5vh; /* Ajustado ligeramente más grande */
-    margin-top: 1.5vh; /* Ajustado ligeramente más grande */
+    font-size: 2.5vh; 
+    margin-top: 1.5vh; 
     transition: background-color 0.3s, color 0.3s;
     border-radius: 2vh;
 }
@@ -146,9 +147,9 @@ header nav ul li a:hover {
 }
 
 .Idolos h2 {
-    font-size: 3vh; /* Ajustado ligeramente más grande */
-    margin-bottom: 2.5vh; /* Ajustado ligeramente más grande */
-    margin-top: 2.5vh; /* Ajustado ligeramente más grande */
+    font-size: 3vh;
+    margin-bottom: 2.5vh; 
+    margin-top: 2.5vh; 
 }
 
 .card-container {
@@ -165,7 +166,7 @@ header nav ul li a:hover {
 }
 
 .card img {
-    height: 42vh; /* Ajustado ligeramente más grande */
+    height: 42vh;
     object-fit: cover;
 }
 
@@ -192,18 +193,18 @@ header nav ul li a:hover {
 }
 
 .Asociarse h2 {
-    font-size: 3vh; /* Ajustado ligeramente más grande */
-    margin-bottom: 3vh; /* Ajustado ligeramente más grande */
+    font-size: 3vh; 
+    margin-bottom: 3vh; 
 }
 
 .Asociarse h3 {
-    font-size: 2vh; /* Ajustado ligeramente más grande */
-    margin-bottom: 2.5vh; /* Ajustado ligeramente más grande */
+    font-size: 2vh; 
+    margin-bottom: 2.5vh; 
 }
 
 .form-group {
-    margin: 0 auto 3vh; /* Ajustado ligeramente más grande */
-    max-width: 45vh; /* Ajustado ligeramente más grande */
+    margin: 0 auto 3vh; 
+    max-width: 45vh; 
     text-align: left;
 }
 
@@ -228,9 +229,9 @@ button[type="submit"] {
     background-color: red;
     color: white;
     border: none;
-    padding: 1.5vh 3vh; /* Ajustado ligeramente más grande */
-    border-radius: 1.5vh; /* Ajustado ligeramente más grande */
-    font-size: 2.3vh; /* Ajustado ligeramente más grande */
+    padding: 1.5vh 3vh;
+    border-radius: 1.5vh; 
+    font-size: 2.3vh; 
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -257,40 +258,40 @@ footer img {
 }
 
 @media screen and (max-width: 768px) {
-    /* Ajuste del tamaño del título en la vista móvil */
+   
     header h1 {
         font-size: 2,5vh;
     }
+    
 
     header {
         position: sticky;
     }
 
-    /* Alineación del botón del navbar a la derecha */
     .navbar-toggler-right {
         margin-left: auto;
         margin-right: 0.5vh;
-        color: #D20823; /* Color del icono del menú desplegable */
+        color: #D20823; 
     }
     nav {
         color: #D20823;
     }
-    /* Eliminar el margen superior del menú desplegable */
+    
     .navbar-collapse {
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: #D20823; /* Ajusta el color de fondo según sea necesario */
-        z-index: 1000; /* Asegura que el navbar desplegado esté encima de otros elementos */
-        display: none; /* Inicialmente oculta las opciones */
+        background-color: #D20823; 
+        z-index: 1000; 
+        display: none; 
     }
     
     .navbar-collapse.show {
-        display: block; /* Muestra las opciones cuando el navbar está desplegado */
+        display: block; 
     }
     
-    /* Estilo de las opciones */
+   
     .navbar-nav {
         display: flex;
         flex-direction: column;
@@ -301,29 +302,29 @@ footer img {
         margin: 1rem 0;
     }
     
-    /* Ajuste del tamaño del título en la vista móvil */
+  
     header h1 {
         font-size: 3vh;
-        margin-top: 1.5vh; /* Agrega un espacio arriba del h1 */
+        margin-top: 1.5vh; 
     }
-    /* Alineación de los elementos del navbar a la derecha */
+    
     .navbar-nav {
         margin-left: auto;
         margin-right: 2vh;
     }
 
-    /* Espaciado entre elementos del menú */
+   
     .navbar-nav li {
         margin-left: 1rem;
     }
 
-    /* Alineación del título a la izquierda */
+   
     .navbar-brand {
         margin-right: auto;
         margin-left: 2vh;
     }
 
-    /* Ajuste de margen para el contenido de historia */
+  
     .historia .ContenidoHistoria {
         flex-direction: column;
         align-items: center;
@@ -343,7 +344,7 @@ footer img {
         width: 30vh;
         margin: 0;
     }
-    /* Ajuste de margen para el carrusel */
+    
     #carouselExample {
         margin-left: 0;
         margin-right: 0;

@@ -62,10 +62,8 @@ header nav ul li a:hover {
 }
 
 #hamburger {
-    background-color: #D20823!important;
-    
+    background-color: #D20823!important;    
 }
-
 
 .imageninicio {
     background-image: url(./Imges/ImagenFondoLDA.jpg);
@@ -81,8 +79,7 @@ header nav ul li a:hover {
 }
 
 .imageninicio h2 {
-    font-size: 5vh;
-    
+    font-size: 5vh;    
 }
 
 .imageninicio div button {
@@ -236,6 +233,27 @@ button[type="submit"] {
     font-size: 2.3vh; /* Ajustado ligeramente más grande */
     cursor: pointer;
     transition: background-color 0.3s;
+}
+
+footer {
+    background-color: black;
+}
+footer img {
+    margin-top: 3vh;
+    margin-left: 8vh;
+    margin-right: 8vh;
+    margin-bottom: 2vh;
+}
+
+.Redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Redes img {
+    height: 8vh; 
+    width: 8vh;
 }
 
 @media screen and (max-width: 768px) {

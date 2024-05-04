@@ -128,11 +128,14 @@ header nav ul li a:hover {
 
 .ContenidoHistoria div {
     height: 40vh;
+    width: 60vh;
 }
 .ContenidoHistoria img {
     height: 40vh;
     width: 40vh;
-
+}
+#carouselExample {
+    margin-left: 25vh ;
 }
 
 .ContenidoHistoria p {
@@ -180,6 +183,64 @@ header nav ul li a:hover {
 
 .btn-rojo:hover {
     background-color: darkred;
+}
+
+.tienda {
+    text-align: center;
+    background-color: #D20823;
+    color: white;
+}
+
+.tienda h2 {
+    padding-top: 2vh;
+}
+
+.tienda #secciones {
+    display: flex;
+    justify-content: center;
+    gap: 2vh;
+    margin-bottom: 2vh; 
+}
+.tienda .card-container {
+    color: #000;
+}
+
+#carrito h2 {
+    margin-bottom: 20px; 
+}
+
+#carrito ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+#carrito li {
+    margin-bottom: 10px; 
+}
+
+#carrito p {
+    margin-top: 20px; 
+    font-weight: bold; 
+}
+
+#carrito button {
+    display: inline-block; 
+    margin-top: 20px; 
+    padding: 10px 20px; 
+    background-color: white;
+    color: black;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+#carrito button:hover {
+    background-color: #ff4d6b; 
+}
+
+#carrito {
+    padding-bottom: 5vh;
 }
 
 .Asociarse {
@@ -321,14 +382,15 @@ footer img {
         margin-left: 2vh;
     }
 
-   .ContenidoHistoria img {
+   #carouselExample {
         margin-left: 0;
         margin-right: 0;
-
+        width: auto;
     }
     .historia .ContenidoHistoria {
         flex-direction: column;
         align-items: center;
+        
     }
 
     .ContenidoHistoria p {
@@ -344,6 +406,40 @@ footer img {
         margin: 0;
     }
     
+    .tienda #secciones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tienda .card-container {
+        display: block; 
+        margin: 10px auto; 
+    }
+
+    .tienda .card {
+        width: 90%; 
+        margin: 10px auto; 
+    }
+
+    .tienda .card img {
+        height: auto; 
+        width: 100%; 
+    }
+
+    .tienda .card-body {
+        padding: 10px; 
+    }
+
+    .tienda .card-title {
+        font-size: 1.2em; 
+        margin-bottom: 5px; 
+    }
+
+    .tienda .card-text {
+        font-size: 0.9em; 
+    }
+}   
    
 
     footer img {
@@ -352,4 +448,3 @@ footer img {
         margin-right: 5vh;
         margin-bottom: 2vh;
     }
-}

@@ -13,9 +13,8 @@
 
     <header>
         
-        <h1 class="titulo"><img src="./Imges/Escudo_del_Club_Atlético_Independiente.svg" alt="">Independiente</h1>
+        <h1 class="titulo">Independiente <img src="./Imges/Escudo_del_Club_Atlético_Independiente.svg" alt=""></h1>
 
-       
         <nav class="navbar navbar-expand-lg navbar-light bg-light d-lg-none" id="hamburger">
             <div class="container-fluid">
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,6 +29,9 @@
                             <a class="nav-link" href="#idolos">Ídolos</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#tienda">Tienda</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#asociarse">Asociate</a>
                         </li>
                     </ul>
@@ -42,6 +44,7 @@
             <ul>
                 <li><a href="#historia">Historia</a></li>
                 <li><a href="#idolos">Ídolos</a></li>
+                <li><a href="#tienda">Tienda</a></li>
                 <li><a href="#asociarse">Asociate</a></li>
             </ul>
         </nav>
@@ -122,6 +125,69 @@
         </div>
     </section>
 
+    <section class="tienda" id="tienda">
+        
+        <h2>Tienda Oficial</h2>
+
+        <h3>Lanzamiento indumentaria 2024</h3>
+        
+    <div id="secciones">
+        <div class="card-container">
+            <div class="card">
+                <img src="./Imges/CamisetaTitular.webp" class="card-img-top" alt="Sección 1">
+                <div class="card-body">
+                    <h5 class="card-title">Camiseta Titular</h5>
+                    <p class="card-text">$10.000</p>
+                    <button class="btn btn-primary" onclick="agregarAlCarrito('Camiseta Titular', 10000)">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card-container">
+              <div class="card">
+                <img src="./Imges/CamisetaSuplente.webp" class="card-img-top" alt="Sección 2">
+                <div class="card-body">                        
+                    <h5 class="card-title">Camiseta Suplente</h5>
+                     <p class="card-text">$10.000</p>
+                     <button class="btn btn-primary" onclick="agregarAlCarrito('Camiseta Suplente', 10000)">Agregar al carrito</button>
+                    </div>
+            </div>
+        </div>
+                
+        <div class="card-container">
+            <div class="card">                    
+                <img src="./Imges/CamperaIndependiente.webp" class="card-img-top" alt="Sección 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Campera</h5>
+                        <p class="card-text">$15.000</p>
+                        <button class="btn btn-primary" onclick="agregarAlCarrito('Campera', 15000)">Agregar al carrito</button>
+                    </div>
+            </div>
+        </div>
+            
+        <div class="card-container">
+            <div class="card">
+                    <img src="./Imges/ShortIndependiente.avif" class="card-img-top" alt="Sección 4">                            
+                    <div class="card-body">
+                            <h5 class="card-title">Short</h5>
+                            <p class="card-text">$6.000</p>
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Short', 6000)">Agregar al carrito</button>                        </div>
+
+                        </div>
+            </div>
+        </div>
+
+    <div id="carrito">
+        <h2>Carrito de compras</h2>
+        <ul id="lista-productos"></ul>
+        <p>Total: <span id="total">$0</span></p>
+        <button id="confirmar-compra">Confirmar compra</button>
+        <button id="borrar-seleccion">Borrar selección</button>
+    </div>
+
+    </section>
+    
+
     <section class="Asociarse" id="asociarse">
         <h2>Asociate al Club Atletico Independiente</h2>
         <h3>Envia tus datos para que nos pongamos en contacto</h3>
@@ -160,6 +226,50 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        // Variables para manejar el carrito
+        let carrito = [];
+        const listaProductos = document.getElementById('lista-productos');
+        const totalElement = document.getElementById('total');
+    
+        // Función para agregar un producto al carrito
+        function agregarAlCarrito(nombre, precio) {
+            carrito.push({ nombre, precio });
+            renderizarCarrito();
+        }
+    
+        // Función para renderizar el carrito
+        function renderizarCarrito() {
+            listaProductos.innerHTML = '';
+            let total = 0;
+            carrito.forEach(producto => {
+                const li = document.createElement('li');
+                li.textContent = `${producto.nombre}: $${producto.precio}`;
+                listaProductos.appendChild(li);
+                total += producto.precio;
+            });
+            totalElement.textContent = `$${total}`;
+        }
+    
+        //botón de confirmar compra
+        document.getElementById('confirmar-compra').addEventListener('click', () => {
+            if (carrito.length > 0) {
+                alert('Compra confirmada. Gracias por su compra!');
+                // Limpia el carrito después de confirmar la compra
+                carrito = [];
+                renderizarCarrito();
+            } else {
+                alert('El carrito está vacío. Por favor, agregue productos antes de confirmar la compra.');
+            }
+        });
+    
+        
+        document.getElementById('borrar-seleccion').addEventListener('click', () => {
+            carrito = [];
+            renderizarCarrito();
+        });
+    </script>
     
 </body>
 </html>

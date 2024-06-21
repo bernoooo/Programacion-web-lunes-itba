@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C.A.I</title>
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/png" href="./Imges/Escudo_del_Club_Atlético_Independiente.svg">
 </head>
 
@@ -29,7 +30,7 @@
                             <a class="nav-link" href="#idolos">Ídolos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#tienda">Tienda</a>
+                            <a class="nav-link" href="#titulostienda">Tienda</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#asociarse">Asociate</a>
@@ -44,7 +45,7 @@
             <ul>
                 <li><a href="#historia">Historia</a></li>
                 <li><a href="#idolos">Ídolos</a></li>
-                <li><a href="#tienda">Tienda</a></li>
+                <li><a href="#titulostienda">Tienda</a></li>
                 <li><a href="#asociarse">Asociate</a></li>
             </ul>
         </nav>
@@ -125,68 +126,100 @@
         </div>
     </section>
 
-    <section class="tienda" id="tienda">
-        
-        <h2>Tienda Oficial</h2>
-
-        <h3>Lanzamiento indumentaria 2024</h3>
-        
-    <div id="secciones">
-        <div class="card-container">
-            <div class="card">
-                <img src="./Imges/CamisetaTitular.webp" class="card-img-top" alt="Sección 1">
-                <div class="card-body">
-                    <h5 class="card-title">Camiseta Titular</h5>
-                    <p class="card-text">$10.000</p>
-                    <button class="btn btn-primary" onclick="agregarAlCarrito('Camiseta Titular', 10000)">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
-        
-        <div class="card-container">
-              <div class="card">
-                <img src="./Imges/CamisetaSuplente.webp" class="card-img-top" alt="Sección 2">
-                <div class="card-body">                        
-                    <h5 class="card-title">Camiseta Suplente</h5>
-                     <p class="card-text">$10.000</p>
-                     <button class="btn btn-primary" onclick="agregarAlCarrito('Camiseta Suplente', 10000)">Agregar al carrito</button>
-                    </div>
-            </div>
-        </div>
-                
-        <div class="card-container">
-            <div class="card">                    
-                <img src="./Imges/CamperaIndependiente.webp" class="card-img-top" alt="Sección 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Campera</h5>
-                        <p class="card-text">$15.000</p>
-                        <button class="btn btn-primary" onclick="agregarAlCarrito('Campera', 15000)">Agregar al carrito</button>
-                    </div>
-            </div>
-        </div>
-            
-        <div class="card-container">
-            <div class="card">
-                    <img src="./Imges/ShortIndependiente.avif" class="card-img-top" alt="Sección 4">                            
-                    <div class="card-body">
-                            <h5 class="card-title">Short</h5>
-                            <p class="card-text">$6.000</p>
-                            <button class="btn btn-primary" onclick="agregarAlCarrito('Short', 6000)">Agregar al carrito</button>                        </div>
-
-                        </div>
-            </div>
-        </div>
-
-    <div id="carrito">
-        <h2>Carrito de compras</h2>
-        <ul id="lista-productos"></ul>
-        <p>Total: <span id="total">$0</span></p>
-        <button id="confirmar-compra">Confirmar compra</button>
-        <button id="borrar-seleccion">Borrar selección</button>
-    </div>
-
+    <section class="Titulostienda" id="titulostienda">
+        <h2>Bienvenidos a nuestra tienda</h2>
     </section>
-    
+
+    <section class="contenedor" id="tienda">
+        
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Camiseta Titular</span>
+                <img src="./imges/CamisetaTitular.webp" alt="" class="img-item">
+                <span class="precio-item">$10.000</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+       
+            <div class="item">
+                <span class="titulo-item">Camiseta Suplente</span>
+                <img src="./imges/CamisetaSuplente.webp" alt="" class="img-item">
+                <span class="precio-item">$10.000</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Campera</span>
+                <img src="./imges/CamperaIndependiente.webp" alt="" class="img-item">
+                <span class="precio-item">$15.000</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            
+        </div>
+        <div class="carrito">
+            <div class="header-carrito">
+                <h2>Tu carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+                <!--
+                <div class="carrito-item">
+                    <img src="./imges/CamisetaTitular.webp" alt="" width="80px">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Camiseta Titular</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad" ></i>
+                        </div>
+                        <span class="carrito-item-precio">$10.000</span>
+                    </div>
+                    <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div>
+                <div class="carrito-item">
+                    <img src="./imges/CamisetaSuplente.webp" alt="" width="80px">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Camiseta Suplente</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad" ></i>
+                        </div>
+                        <span class="carrito-item-precio">$10.000</span>
+                    </div>
+                    <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div>
+                <div class="carrito-item">
+                    <img src="./imges/CamperaIndependiente.webp" alt="" width="80px">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Campera</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="2" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad" ></i>
+                        </div>
+                        <span class="carrito-item-precio">$15.000</span>
+                    </div>
+                    <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div>
+                -->
+            </div>
+                
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $0
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar<i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+        </div>
+    </section>
 
     <section class="Asociarse" id="asociarse">
         <h2>Asociate al Club Atletico Independiente</h2>
@@ -212,7 +245,6 @@
         </form>
     </section>
     
-
     <footer>
     <section >    
         
@@ -227,49 +259,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <script>
-        // Variables para manejar el carrito
-        let carrito = [];
-        const listaProductos = document.getElementById('lista-productos');
-        const totalElement = document.getElementById('total');
     
-        // Función para agregar un producto al carrito
-        function agregarAlCarrito(nombre, precio) {
-            carrito.push({ nombre, precio });
-            renderizarCarrito();
-        }
-    
-        // Función para renderizar el carrito
-        function renderizarCarrito() {
-            listaProductos.innerHTML = '';
-            let total = 0;
-            carrito.forEach(producto => {
-                const li = document.createElement('li');
-                li.textContent = `${producto.nombre}: $${producto.precio}`;
-                listaProductos.appendChild(li);
-                total += producto.precio;
-            });
-            totalElement.textContent = `$${total}`;
-        }
-    
-        //botón de confirmar compra
-        document.getElementById('confirmar-compra').addEventListener('click', () => {
-            if (carrito.length > 0) {
-                alert('Compra confirmada. Gracias por su compra!');
-                // Limpia el carrito después de confirmar la compra
-                carrito = [];
-                renderizarCarrito();
-            } else {
-                alert('El carrito está vacío. Por favor, agregue productos antes de confirmar la compra.');
-            }
-        });
-    
-        
-        document.getElementById('borrar-seleccion').addEventListener('click', () => {
-            carrito = [];
-            renderizarCarrito();
-        });
-    </script>
+
+    <script src="script.js"></script>
     
 </body>
 </html>
